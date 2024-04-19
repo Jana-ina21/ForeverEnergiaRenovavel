@@ -1,0 +1,95 @@
+/* Estizando o Segundo Arquivo - como_funciona.css */
+
+* {
+    background-color: #4CCD99;
+}
+
+
+.header {
+    padding: 20px;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.logo-container {
+    float: left;
+    margin: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+
+nav {
+    float: left;
+    margin: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 110px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.primeiro-paragrafo {
+    clear: both;
+    text-align: center;
+    color: #000000;
+    margin-top: 20px;
+}
+
+.primeiro-paragrafo p {
+    font-size: 25px;
+}
+
+.primeiro-paragrafo span {
+    color: #FFFFFF;
+}
+
+
+.imagem {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imagem img {
+    width: 650px;
+}
+
+
+.ultimo-paragrafo {
+    text-align: center;
+    color: #000000;
+    margin-top: 50px;
+}
+
+.ultimo-paragrafo p {
+    font-size: 20px;
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer p a {
+    text-decoration: none;
+}
