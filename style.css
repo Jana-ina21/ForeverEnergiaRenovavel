@@ -1,0 +1,77 @@
+/* Estilização Primeiro Arquivo - Index.html */
+* {
+  background-color: #4CCD99;
+}
+
+
+.header {
+  padding: 20px;
+}
+
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between; 
+  list-style: none;
+}
+
+.header nav ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto; 
+  width: 300px; 
+}
+
+
+.paragrafo {
+  color: #FFFFFF; 
+  font-size: 40px;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+
+.titulo {
+  color: #FFFFFF; 
+  font-size: 50px;
+  text-align: left;
+}
+
+
+.imagem-solar {
+  width: 50%; 
+  max-width: 500px; 
+  border: 15px solid #006400; 
+  border-radius: 15px; 
+  float: right; 
+  margin-bottom: 50px; 
+  position: relative;
+  top: -100px; 
+}
+
+
+.footer {
+  clear: both; 
+  text-align: center;
+}
+
+.footer p {
+  font-size: 20px;
+  color: #000000; 
+}
+
+.footer p a {
+  text-decoration: none;
+}
