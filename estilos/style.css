@@ -1,5 +1,5 @@
 /* Estilização Primeiro Arquivo - index.html */
-* {
+body {
   background-color: #4CCD99;
 }
 
@@ -22,6 +22,7 @@
 .header nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .logo-container {

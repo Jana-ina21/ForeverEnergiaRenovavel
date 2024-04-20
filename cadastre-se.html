@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/cadastre-se.css">
     <title>Cadastre-se</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
 
-        <div>
+        <div class="container">
 
-            <div>
-                <img src="./img/logo.png" alt="Imagem da Logo">
+            <div class="logo-container">
+                <img class="logo" src="./img/logo.png" alt="Imagem da Logo">
             </div>
 
             <div>
@@ -32,84 +33,91 @@
     </header>
 
     <main>
-        <section>
-            <div>
-                <p><strong>Facilitamos tudo na Forever. <br>
-                        Com apenas alguns cliques, você <br>
-                        economiza em sua conta de luz, tendo <br>
-                        acesso a energia limpa e renovável, <br>
-                        sem complicações. Sem instalações, <br>
-                        sem obras e sem gastar um centavo.</strong></p>
+        <section class="section-1">
+            <div class="paragrafo-container">
+                <p class="paragrafo"><strong>Facilitamos tudo na <br>
+                        Forever. <br>
+                        Com apenas alguns <br>
+                        cliques, você <br>
+                        economiza em sua <br>
+                        conta de luz, tendo <br>
+                        acesso a energia <br>
+                        limpa e renovável, <br>
+                        sem complicações. <br>
+                        Sem instalações, <br>
+                        sem obras e sem <br>
+                        gastar um centavo.</strong></p>
     
-                <h1>Faça já o seu cadastro</h1>
+                <h1 class="titulo">Faça já o seu cadastro</h1>
             </div>
     
-            <div>
-                <input type="radio" name="pessoa" id="fisica" value="fisica">
-                <label for="física">Pessoa Física</label>
-                <input type="radio" name="pessoa" id="juridica" value="juridica">
-                <label for="jurídica">Pessoa Jurídica</label>
+            <div class="formulario-container">
+                <div class="pessoa-container">
+                    <input type="radio" name="pessoa" id="fisica" value="fisica">
+                    <label for="fisica" class="label-fisica">Pessoa Física</label>
+                    <input type="radio" name="pessoa" id="juridica" value="juridica">
+                    <label for="juridica" class="label-juridica">Pessoa Jurídica</label>
+                </div>
+    
+                <form class="formulario">
+                    <div class="input-container">
+                        <label for="nome" class="label">Nome <span>*</span> </label>
+                        <input type="text" name="nome" id="nome" class="input-nome" required>
+                        <p class="atencao"><span>*Atenção: O nome precisa ser do titular da conta de luz</span></p>
+                    </div>
+    
+                    <div class="input-container">
+                        <label for="email" class="label">E-mail <span>*</span> </label>
+                        <input type="email" name="email" id="email" class="input-email" required>
+                    </div> <br>
+    
+                    <div class="input-container">
+                        <label for="celular" class="label">Celular <span>*</span> </label>
+                        <input type="tel" name="celular" id="celular" class="input-celular" required>
+                    </div> <br>
+    
+                    <div class="input-container">
+                        <label for="endereco" class="label">Endereço <span>*</span> </label>
+                        <input type="text" name="endereco" id="endereco" class="input-endereco" required>
+                    </div> <br>
+    
+                    <div class="input-container">
+                        <label for="cep" class="label">Cep <span>*</span></label>
+                        <input type="text" name="cep" id="cep" class="input-cep" required>
+                        <label for="numero" class="label">Nº <span>*</span></label>
+                        <input type="number" name="numero" id="numero" class="input-numero" required>
+                    </div> <br>
+    
+                    <div class="input-container">
+                        <label for="bairro" class="label">Bairro <span>*</span></label>
+                        <input type="text" name="bairro" id="bairro" class="input-bairro" required>
+                        <label for="complemento" class="label">Compl. </label>
+                        <input type="text" name="complemento" id="complemento" class="input-complemento">
+                    </div> <br>
+    
+                    <div class="input-container">
+                        <label for="cidade" class="label">Cidade <span>*</span></label>
+                        <input type="text" name="cidade" id="cidade" class="input-cidade" required>
+                        <label for="estado" class="label">Estado <span>*</span></label>
+                        <input type="text" name="estado" id="estado" class="input-estado" required>
+                    </div>
+    
+                    <div class="input-container-gasto">
+                        <p class="label">Quanto você gasta de luz por mês?</p>
+                        <input type="number" name="gasto" id="gasto" class="input-gasto" required>
+                    </div> <br>
+    
+                    <div class="input-container">
+                        <input type="reset" value="Limpar" id="reset" class="botao-limpar">
+                        <input type="submit" value="Enviar" id="submit" class="botao-enviar">
+                    </div>
+    
+                </form>
             </div>
-    
-            <form>
-                <div>
-                    <label for="nome">Nome <span>*</span> </label>
-                    <input type="text" name="nome" id="nome" required>
-                    <p><span>*Atenção: O nome precisa ser do titular da conta de luz</span></p>
-                </div>
-    
-                <div>
-                    <label for="email">E-mail <span>*</span> </label>
-                    <input type="email" name="email" id="email" required>
-                </div> <br>
-    
-                <div>
-                    <label for="celular">Celular <span>*</span> </label>
-                    <input type="tel" name="celular" id="celular" required>
-                </div> <br>
-    
-                <div>
-                    <label for="endereco">Endereço <span>*</span> </label>
-                    <input type="text" name="endereco" id="endereco" required>
-                </div> <br>
-    
-                <div>
-                    <label for="cep">Cep <span>*</span></label>
-                    <input type="text" name="cep" id="cep" required>
-                    <label for="numero">Nº <span>*</span></label>
-                    <input type="number" name="numero" id="numero" required>
-                </div> <br>
-    
-                <div>
-                    <label for="bairro">Bairro <span>*</span></label>
-                    <input type="text" name="bairro" id="bairro" required>
-                    <label for="complemento">Compl. </label>
-                    <input type="text" name="complemento" id="complemento">
-                </div> <br>
-    
-                <div>
-                    <label for="cidade">Cidade <span>*</span></label>
-                    <input type="text" name="cidade" id="cidade" required>
-                    <label for="estado">Estado <span>*</span></label>
-                    <input type="text" name="estado" id="estado" required>
-                </div>
-    
-                <div>
-                    <p>Quanto você gasta de luz por mês?</p>
-                    <label for="gasto"></label>
-                    <input type="number" name="gasto" id="gasto" required>
-                </div> <br>
-    
-                <div>
-                    <input type="reset" value="Limpar" id="reset">
-                    <input type="submit" value="Enviar" id="submit">
-                </div>
-    
-            </form>
         </section>
     </main>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Forever Energia Renovável. Todos os direitos reservados | Desenvolvido por <a href="https://github.com/Jana-ina21" target="_blank">Janaina de Oliveira</a> e <a
             href="https://github.com/BarbaraFFCampos" target="_blank">Barbara Campos</a></p>
     </footer>
