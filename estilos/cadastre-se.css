@@ -1,0 +1,183 @@
+/* Estilizando o Quarto Arquivo - cadastre-se.css */
+
+body {
+    background-color: #4CCD99;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    float: left;
+    margin: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    float: left;
+    margin: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 100px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.paragrafo {
+    clear: both;
+    color: #000000;
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+
+.titulo {
+    color: #000000;
+    margin-left: 20px;
+    font-size: 45px;
+}
+
+/* Primeiro formulário */
+.formulario-container {
+    float: right; 
+    margin-right: 50px; 
+    margin-bottom: 20px;
+    margin-top: -600px; 
+}
+
+/* Rádio buttons */
+.pessoa-container {
+    margin-bottom: 20px;
+}
+
+/* Labels dos rádios */
+.label-fisica,
+.label-juridica {
+    color: #000000;
+    font-size: 20px;
+    margin-right: 50px;
+}
+
+/* Formulário */
+.formulario {
+    padding: 20px;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+/* Labels dos inputs */
+.label {
+    color: #000000;
+    font-size: 20px;
+}
+
+/* Inputs */
+.input-nome,
+.input-email,
+.input-endereco,
+.input-gasto {
+    width: 400px;
+    height: 30px;
+    border: 2px solid #000000;
+}
+
+.input-celular,
+.input-cep,
+.input-bairro,
+.input-cidade {
+    width: 200px;
+    height: 30px;
+    border: 2px solid #000000;
+}
+
+.input-numero,
+.input-complemento,
+.input-estado {
+    width: 150px;
+    height: 30px;
+    border: 2px solid #000000;
+}
+
+/* Aumenta o tamanho dos radio buttons */
+input[type="radio"] {
+    transform: scale(2);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Adiciona espaçamento entre Cep e Nº */
+.input-cep {
+    margin-right: 20px;
+}
+
+/* Adiciona espaçamento entre Bairro e Compl. */
+.input-bairro {
+    margin-right: 20px;
+}
+
+/* Adiciona espaçamento entre Cidade e Estado */
+.input-cidade {
+    margin-right: 20px;
+}
+
+.atencao {
+    color: #ED1010;
+}
+
+/* Botões */
+.botao-limpar,
+.botao-enviar {
+    color: #000000;
+    border: 2px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    transition: background-color 0.3s ease; 
+}
+
+.botao-limpar:hover,
+.botao-enviar:hover {
+    background-color: #4caf50; 
+    color: #ffffff; 
+}
+
+
+.input-container-gasto {
+    margin-left: 30px;
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer p a {
+    text-decoration: none;
+}
