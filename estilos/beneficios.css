@@ -1,0 +1,85 @@
+/* Estilizando o Terceiro Arquivo - beneficios.css */
+
+* {
+    background-color: #4CCD99;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    float: left;
+    margin: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    float: left;
+    margin: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 110px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h1 {
+    clear: both;
+    color: #000000;
+    text-align: center;
+    font-size: 30px;
+}
+
+.paragrafo-imagem {
+    display: flex;
+    align-items: center;
+    margin-left: 100px; 
+    margin-bottom: 50px;
+}
+
+.paragrafo-imagem p {
+    color: #000000;
+    font-size: 25px;
+}
+
+.imagem-tomada,
+.imagem-smartphone,
+.imagem-varinha,
+.imagem-planta {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.footer {
+    clear: both;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer p a {
+    text-decoration: none;
+}
