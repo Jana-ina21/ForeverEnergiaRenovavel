@@ -1,86 +1,105 @@
 /* Estilização Terceiro Arquivo - beneficios.html */
-
 body {
     background-color: #4CCD99;
-}
-
-.header {
+  }
+  
+  .header {
     padding: 20px;
-}
-
-.header .container {
+  }
+  
+  .header .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.logo-container {
+  }
+  
+  .logo-container {
     float: left;
     margin: 10px;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 200px;
-}
-
-nav {
+  }
+  
+  nav {
     float: left;
     margin: 20px 10px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin-right: 100px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
-}
-
-h1 {
+  }
+  
+  h1 {
     clear: both;
     color: #000000;
     text-align: center;
     font-size: 40px;
-}
-
-.paragrafo-imagem {
+  }
+  
+  .paragrafo-imagem {
     display: flex;
     align-items: center;
-    margin-left: 100px; 
+    margin-left: 100px;
     margin-bottom: 50px;
-}
-
-.paragrafo-imagem p {
+  }
+  
+  .paragrafo-imagem p {
     color: #000000;
     font-size: 30px;
-}
-
-.imagem-tomada,
-.imagem-smartphone,
-.imagem-varinha,
-.imagem-planta {
-    float: left;
-    width: 200px;
+  }
+  
+  .imagem-tomada,
+  .imagem-smartphone,
+  .imagem-varinha,
+  .imagem-planta {
+    max-width: 200px; 
     height: auto;
     margin-right: 30px;
-}
-
-.footer {
+  }
+  
+  .footer {
     clear: both;
     text-align: center;
-}
-
-.footer p {
+  }
+  
+  .footer p {
     font-size: 20px;
     color: #000000;
-}
-
-.footer p a {
+  }
+  
+  .footer p a {
     text-decoration: none;
-}
+  }
+  
+/* Adicionando Regras de mídia para telas menores que 768px */
+  @media (max-width: 768px) {
+    .header nav ul {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .paragrafo-imagem {
+      flex-wrap: wrap; 
+      margin-left: 0; 
+    }
+  
+    .imagem-tomada,
+    .imagem-smartphone,
+    .imagem-varinha,
+    .imagem-planta {
+      margin-bottom: 20px; 
+    }
+  }
+  
