@@ -68,6 +68,7 @@ nav ul li a {
 /* Rádio buttons */
 .pessoa-container {
     margin-bottom: 20px;
+    margin-left: 100px;
 }
 
 /* Labels dos rádios */
@@ -91,6 +92,7 @@ nav ul li a {
 .label {
     color: #000000;
     font-size: 20px;
+    margin-left: 30px;
 }
 
 /* Inputs */
@@ -99,7 +101,7 @@ nav ul li a {
 .input-endereco,
 .input-gasto {
     width: 400px;
-    height: 30px;
+    height: 40px;
     border: 2px solid #000000;
 }
 
@@ -108,7 +110,7 @@ nav ul li a {
 .input-bairro,
 .input-cidade {
     width: 200px;
-    height: 30px;
+    height: 40px;
     border: 2px solid #000000;
 }
 
@@ -116,7 +118,7 @@ nav ul li a {
 .input-complemento,
 .input-estado {
     width: 150px;
-    height: 30px;
+    height: 40px;
     border: 2px solid #000000;
 }
 
@@ -144,6 +146,8 @@ input[type="radio"] {
 
 .atencao {
     color: #ED1010;
+    margin-left: 50px;
+    font-size: 18px;
 }
 
 /* Botões */
@@ -153,19 +157,26 @@ input[type="radio"] {
     border: 2px solid;
     padding: 10px 20px;
     cursor: pointer;
-    margin-left: 30px;
+    margin-top: 20px;
+    margin-left: 100px;
     transition: background-color 0.3s ease; 
 }
 
-.botao-limpar:hover,
+.botao-limpar:hover{
+    background-color: #ED1010;
+    color: #FFFFFF;
+
+}
+
 .botao-enviar:hover {
     background-color: #4caf50; 
-    color: #ffffff; 
+    color: #FFFFFF; 
 }
 
 
 .input-container-gasto {
-    margin-left: 30px;
+    margin-top: 40px;
+    margin-left: 100px;
 }
 
 .footer {
