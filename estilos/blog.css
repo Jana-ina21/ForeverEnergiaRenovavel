@@ -152,7 +152,7 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* Media Query for screens smaller than 768px */
+/* Adicionando Regras de mídia para telas menores que 768px */
 @media screen and (max-width: 768px) {
     nav ul {
         flex-direction: column;
