@@ -96,31 +96,32 @@ nav ul li a {
 }
 
 /* Inputs */
-.input-nome,
-.input-email,
-.input-endereco,
-.input-gasto {
+form .input-nome,
+form .input-email,
+form .input-endereco,
+form .input-gasto {
     width: 400px;
     height: 40px;
     border: 2px solid #000000;
 }
 
-.input-celular,
-.input-cep,
-.input-bairro,
-.input-cidade {
+form .input-celular,
+form .input-cep,
+form .input-bairro,
+form .input-cidade {
     width: 200px;
     height: 40px;
     border: 2px solid #000000;
 }
 
-.input-numero,
-.input-complemento,
-.input-estado {
+form .input-numero,
+form .input-complemento,
+form .input-estado {
     width: 150px;
     height: 40px;
     border: 2px solid #000000;
 }
+
 
 /* Aumenta o tamanho dos radio buttons */
 input[type="radio"] {
