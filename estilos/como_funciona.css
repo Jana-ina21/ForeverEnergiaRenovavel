@@ -1,96 +1,104 @@
-/* Estização Segundo Arquivo - como_funciona.html */
-
+/* Estilização Segundo Arquivo - como_funciona.html */
 body {
     background-color: #4CCD99;
-}
-
-
-.header {
+  }
+  
+  .header {
     padding: 20px;
-}
-
-.header .container {
+  }
+  
+  .header .container {
     max-width: 1200px;
     margin: 0 auto;
-}
-
-
-.logo-container {
+  }
+  
+  .logo-container {
     float: left;
     margin: 10px;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 200px;
-}
-
-
-nav {
+  }
+  
+  nav {
     float: left;
     margin: 20px 10px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
     display: flex;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     margin-right: 100px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 20px;
-}
-
-.primeiro-paragrafo {
+  }
+  
+  .primeiro-paragrafo {
     clear: both;
     text-align: center;
     color: #000000;
     margin-top: 20px;
-}
-
-.primeiro-paragrafo p {
+  }
+  
+  .primeiro-paragrafo p {
     font-size: 40px;
-}
-
-.primeiro-paragrafo span {
+  }
+  
+  .primeiro-paragrafo span {
     color: #FFFFFF;
-}
-
-
-.imagem {
+  }
+  
+  .imagem {
     text-align: center;
     margin-top: 50px;
-}
-
-.imagem img {
-    width: 800px;
-}
-
-
-.ultimo-paragrafo {
+  }
+  
+  .imagem img {
+    max-width: 100%; 
+  }
+  
+  .ultimo-paragrafo {
     text-align: center;
     color: #000000;
     margin-top: 50px;
-}
-
-.ultimo-paragrafo p {
+  }
+  
+  .ultimo-paragrafo p {
     font-size: 30px;
-}
-
-.footer {
+  }
+  
+  .footer {
     clear: both;
     text-align: center;
-}
-
-.footer p {
+  }
+  
+  .footer p {
     font-size: 20px;
     color: #000000;
-}
-
-.footer p a {
+  }
+  
+  .footer p a {
     text-decoration: none;
-}
+  }
+  
+/* Adicionando Regras de mídia para telas menores que 768px */
+  @media (max-width: 768px) {
+    .header nav ul {
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .primeiro-paragrafo,
+    .ultimo-paragrafo {
+      font-size: 30px; 
+    }
+  }
+  
