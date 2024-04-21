@@ -1,0 +1,158 @@
+/* Estilizando o Quinto Arquivo - blog.css */
+
+body {
+    background-color: #FFFFFF;
+    margin: 0; 
+}
+
+.header {
+    padding: 20px;
+    background-color: #4CCD99;
+    height: 200px;
+    width: 100%; 
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-container {
+    float: left;
+    margin: 10px;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav {
+    float: left;
+    margin: 20px 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-right: 100px;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+.titulo-container {
+    text-align: center;
+}
+
+.titulo-container h1 {
+    color: #4CCD99;
+    display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+}
+
+
+.paragrafo-1 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+/* Ajustar texto à direita no primeiro parágrafo */
+.paragrafo-1 .adjust-text-right {
+    display: inline-block;
+    width: 200px; 
+    text-align: right;
+    margin-left: 70px; 
+  }
+  
+
+.imagem-mapa {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.imagem-eolica {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.container-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: -700px;
+}
+
+.paragrafo-2 {
+    color: #000000;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    text-align: right;
+    font-size: 30px;
+}
+
+/* Ajustar texto à esquerda no segundo parágrafo */
+.paragrafo-2 .adjust-text-left {
+    display: inline-block;
+    width: 600px; 
+    text-align: left;
+  }
+  
+
+.imagem-economia-verde {
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    margin-right: 100px;
+    align-self: flex-end;
+}
+
+
+.paragrafo-3 {
+    color: #000000;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    font-size: 30px;
+    text-align: right;
+}
+
+  /* Ajustar texto à esquerda no terceiro parágrafo */
+  .paragrafo-3 .adjust-text-left {
+    display: inline-block;
+    width: 400px; 
+    text-align: left;
+  }
+
+.footer {
+    clear: both;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    background-color: #4CCD99;
+    height: 50px;
+    width: 100%; 
+}
+
+.footer p {
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer p a {
+    text-decoration: none;
+}
