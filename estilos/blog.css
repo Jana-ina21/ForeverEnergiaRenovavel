@@ -2,14 +2,14 @@
 
 body {
     background-color: #FFFFFF;
-    margin: 0; 
+    margin: 0;
 }
 
 .header {
     padding: 20px;
     background-color: #4CCD99;
     height: 200px;
-    width: 100%; 
+    width: 100%;
 }
 
 .header .container {
@@ -47,7 +47,6 @@ nav ul li a {
     font-size: 20px;
 }
 
-
 .titulo-container {
     text-align: center;
 }
@@ -59,7 +58,6 @@ nav ul li a {
     font-size: 40px;
 }
 
-
 .paragrafo-1 {
     color: #000000;
     margin-bottom: 20px;
@@ -70,11 +68,10 @@ nav ul li a {
 /* Ajustar texto à direita no primeiro parágrafo */
 .paragrafo-1 .adjust-text-right {
     display: inline-block;
-    width: 200px; 
+    width: 200px;
     text-align: right;
-    margin-left: 70px; 
-  }
-  
+    margin-left: 70px;
+}
 
 .imagem-mapa {
     width: 400px;
@@ -108,20 +105,18 @@ nav ul li a {
 /* Ajustar texto à esquerda no segundo parágrafo */
 .paragrafo-2 .adjust-text-left {
     display: inline-block;
-    width: 600px; 
+    width: 600px;
     text-align: left;
-  }
-  
+}
 
 .imagem-economia-verde {
     width: 400px;
     height: auto;
     margin-bottom: 20px;
-    margin-top: 20px; 
+    margin-top: 20px;
     margin-right: 100px;
     align-self: flex-end;
 }
-
 
 .paragrafo-3 {
     color: #000000;
@@ -131,12 +126,12 @@ nav ul li a {
     text-align: right;
 }
 
-  /* Ajustar texto à esquerda no terceiro parágrafo */
-  .paragrafo-3 .adjust-text-left {
+/* Ajustar texto à esquerda no terceiro parágrafo */
+.paragrafo-3 .adjust-text-left {
     display: inline-block;
-    width: 400px; 
+    width: 400px;
     text-align: left;
-  }
+}
 
 .footer {
     clear: both;
@@ -145,7 +140,7 @@ nav ul li a {
     padding: 20px;
     background-color: #4CCD99;
     height: 50px;
-    width: 100%; 
+    width: 100%;
 }
 
 .footer p {
@@ -155,4 +150,67 @@ nav ul li a {
 
 .footer p a {
     text-decoration: none;
+}
+
+/* Media Query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .titulo-container h1 {
+        font-size: 30px;
+    }
+
+    .paragrafo-1 {
+        font-size: 30px;
+    }
+
+    .container-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .paragrafo-2,
+    .paragrafo-3 {
+        text-align: left;
+        margin-right: 0;
+        margin-left: 20px;
+    }
+
+    .imagem-mapa,
+    .imagem-eolica,
+    .imagem-economia-verde {
+        width: 100%;
+        max-width: 300px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    nav {
+        float: none;
+        margin: 20px 0;
+    }
+
+    .titulo-container {
+        margin-bottom: 20px;
+    }
+
+    .paragrafo-1,
+    .paragrafo-2,
+    .paragrafo-3 {
+        margin-bottom: 20px;
+    }
+
+    .imagem-mapa,
+    .imagem-eolica,
+    .imagem-economia-verde {
+        margin-bottom: 20px;
+    }
 }
