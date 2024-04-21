@@ -193,3 +193,37 @@ input[type="radio"] {
 .footer p a {
     text-decoration: none;
 }
+
+/* Adicionando Regras de mídia para telas menores que 768px */
+@media screen and (max-width: 768px) {
+    /* Movendo os formulários para baixo da tela */
+    .formulario-container {
+        float: none;
+        margin: 20px auto; /* Centralizando horizontalmente */
+        margin-left: 20px; /* Posicionando à esquerda */
+    }
+
+
+    .header nav ul {
+        flex-direction: column; 
+        align-items: center; 
+      }
+
+    .paragrafo {
+        font-size: 25px;
+    }
+
+    .titulo {
+        font-size: 35px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    /* Ajustando o posicionamento dos formulários */
+    .formulario-container {
+        width: 100%; 
+        margin-top: 20px; 
+    }
+}
