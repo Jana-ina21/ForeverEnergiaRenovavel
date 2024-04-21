@@ -3,7 +3,6 @@ body {
   background-color: #4CCD99;
 }
 
-
 .header {
   padding: 20px;
 }
@@ -15,7 +14,7 @@ body {
 
 .header nav ul {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   list-style: none;
 }
 
@@ -31,48 +30,66 @@ body {
 
 .logo {
   display: block;
-  margin: 0 auto; 
-  width: 300px; 
+  margin: 0 auto;
+  width: 300px;
 }
 
-
 .paragrafo {
-  color: #FFFFFF; 
+  color: #FFFFFF;
   font-size: 40px;
   text-align: left;
   margin-bottom: 50px;
 }
 
-
 .titulo {
-  color: #FFFFFF; 
+  color: #FFFFFF;
   font-size: 50px;
   text-align: left;
 }
 
-
 .imagem-solar {
-  width: 50%; 
-  max-width: 500px; 
-  border: 15px solid #006400; 
-  border-radius: 15px; 
-  float: right; 
-  margin-bottom: 50px; 
+  width: 50%;
+  max-width: 500px;
+  border: 15px solid #006400;
+  border-radius: 15px;
+  float: right;
+  margin-bottom: 50px;
   position: relative;
-  top: -100px; 
+  top: -100px;
 }
 
-
 .footer {
-  clear: both; 
+  clear: both;
   text-align: center;
 }
 
 .footer p {
   font-size: 20px;
-  color: #000000; 
+  color: #000000;
 }
 
 .footer p a {
   text-decoration: none;
+}
+
+/* Adicionando regras de mídia para telas menores que 768px */
+@media (max-width: 768px) {
+  .header nav ul {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .logo {
+    width: 200px; 
+  }
+
+  .paragrafo,
+  .titulo {
+    font-size: 30px; 
+  }
+
+  .imagem-solar {
+    width: 100%; 
+    top: 0; 
+  }
 }
