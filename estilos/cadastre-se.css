@@ -1,11 +1,15 @@
 /* Estilização Quarto Arquivo - cadastre-se.html */
 
 body {
-    background-color: #4CCD99;
+    background-color: #51AFF7;
+    margin: 0;
 }
 
 .header {
     padding: 20px;
+    background-color: #4CCD99;
+    width: 100%;
+    height: 200px;
 }
 
 .header .container {
@@ -183,6 +187,10 @@ input[type="radio"] {
 .footer {
     clear: both;
     text-align: center;
+    background-color: #4CCD99;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
 }
 
 .footer p {
