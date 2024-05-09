@@ -164,6 +164,7 @@ nav ul li a {
     margin-bottom: 15px;
     border: 3px solid #ccc;
     border-radius: 8px;
+    font-size: 20px;
   }
   
   #comentarios textarea {
@@ -172,6 +173,7 @@ nav ul li a {
     border: 3px solid #ccc;
     border-radius: 8px;
     resize: vertical;
+    font-size: 20px;
   }
   
   #comentarios input[type="submit"] {
