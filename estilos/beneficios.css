@@ -11,10 +11,10 @@ body {
     height: 200px;
   }
   
-  .header .container {
+  /* .header .container {
     max-width: 1200px;
     margin: 0 auto;
-  }
+  } */
   
   .logo-container {
     float: left;
@@ -26,8 +26,8 @@ body {
   }
   
   nav {
-    float: left;
-    margin: 20px 10px;
+    float: right;
+    margin: 70px 20px;
   }
   
   nav ul {
@@ -36,13 +36,13 @@ body {
   }
   
   nav ul li {
-    margin-right: 100px;
+    margin-right: 140px;
   }
   
   nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
   }
   
   h1 {
