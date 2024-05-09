@@ -20,6 +20,7 @@ body {
   display: flex;
   justify-content: space-around;
   list-style: none;
+  margin: 70px 20px;
 }
 
 .header nav ul li a {
