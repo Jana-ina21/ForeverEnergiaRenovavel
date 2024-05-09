@@ -12,10 +12,10 @@ body {
     height: 200px;
 }
 
-.header .container {
+/* .header .container {
     max-width: 1200px;
     margin: 0 auto;
-}
+} */
 
 .logo-container {
     float: left;
@@ -27,8 +27,8 @@ body {
 }
 
 nav {
-    float: left;
-    margin: 20px 10px;
+    float: right;
+    margin: 70px 20px;
 }
 
 nav ul {
@@ -37,45 +37,49 @@ nav ul {
 }
 
 nav ul li {
-    margin-right: 100px;
+    margin-right: 140px;
 }
 
 nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
 }
-
 
 .paragrafo {
     clear: both;
     color: #000000;
-    margin-left: 20px;
-    font-size: 35px;
+    margin-left: 60px;
+    font-size: 40px;
+    margin-top: 100px;
 }
-
 
 .titulo {
     color: #000000;
-    margin-left: 20px;
-    font-size: 45px;
+    margin-left: 60px;
+    font-size: 60px;
+    margin-top: 100px;
+
 }
 
-/* Primeiro formulário */
 .formulario-container {
-    float: right; 
-    margin-right: 50px; 
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-left: 700px;
     margin-bottom: 20px;
-    margin-top: -600px; 
+    margin-top: -750px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 50%;
 }
 
-/* Rádio buttons */
 .pessoa-container {
     margin-bottom: 20px;
-    margin-left: 100px;
+    margin-left: 80px;
+    margin-top: 30px;
 }
 
-/* Labels dos rádios */
 .label-fisica,
 .label-juridica {
     color: #000000;
@@ -83,105 +87,70 @@ nav ul li a {
     margin-right: 50px;
 }
 
-/* Formulário */
-.formulario {
-    padding: 20px;
-}
-
-.input-container {
-    margin-bottom: 20px;
-}
-
-/* Labels dos inputs */
-.label {
-    color: #000000;
-    font-size: 20px;
-    margin-left: 30px;
-}
-
-/* Inputs */
-form .input-nome,
-form .input-email,
-form .input-endereco,
-form .input-gasto {
-    width: 400px;
-    height: 40px;
-    border: 2px solid #000000;
-}
-
-form .input-celular,
-form .input-cep,
-form .input-bairro,
-form .input-cidade {
-    width: 200px;
-    height: 40px;
-    border: 2px solid #000000;
-}
-
-form .input-numero,
-form .input-complemento,
-form .input-estado {
-    width: 150px;
-    height: 40px;
-    border: 2px solid #000000;
-}
-
-
-/* Aumenta o tamanho dos radio buttons */
 input[type="radio"] {
     transform: scale(2);
     margin-right: 10px;
     cursor: pointer;
 }
 
-/* Adiciona espaçamento entre Cep e Nº */
-.input-cep {
-    margin-right: 20px;
+.formulario {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-/* Adiciona espaçamento entre Bairro e Compl. */
-.input-bairro {
-    margin-right: 20px;
+.input-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
 }
 
-/* Adiciona espaçamento entre Cidade e Estado */
-.input-cidade {
-    margin-right: 20px;
+.label {
+    color: #000000;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+
+.input-nome,
+.input-email,
+.input-celular,
+.input-endereco,
+.input-cep,
+.input-numero,
+.input-bairro,
+.input-complemento,
+.input-cidade,
+.input-estado,
+.input-gasto {
+    width: 500px;
+    height: 40px;
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 
 .atencao {
     color: #ED1010;
-    margin-left: 50px;
-    font-size: 18px;
+    margin-left: 10px;
+    font-size: 20px;
 }
 
-/* Botões */
-.botao-limpar,
 .botao-enviar {
-    color: #000000;
-    border: 2px solid;
+    background-color: #007BFF;
+    color: #fff;
     padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 20px;
     margin-top: 20px;
-    margin-left: 100px;
-    transition: background-color 0.3s ease; 
-}
-
-.botao-limpar:hover{
-    background-color: #ED1010;
-    color: #FFFFFF;
-
+    margin-left: 200px;
 }
 
 .botao-enviar:hover {
-    background-color: #4caf50; 
-    color: #FFFFFF; 
-}
-
-
-.input-container-gasto {
-    margin-top: 40px;
-    margin-left: 100px;
+    background-color: #0056b3;
 }
 
 .footer {
