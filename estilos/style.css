@@ -11,21 +11,21 @@ body {
   height: 200px;
 }
 
-.header .container {
+/* .header .container {
   max-width: 1200px;
   margin: 0 auto;
-}
+} */
 
 .header nav ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
 }
 
 .header nav ul li a {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .logo-container {
