@@ -101,3 +101,74 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+
+    // Validação do formulário de comentários
+    let commentForm = document.querySelector('#comentarios form');
+    let commentInputs = commentForm.getElementsByTagName('input');
+    let commentTextarea = commentForm.querySelector('textarea');
+  
+    commentForm.addEventListener('submit', function(e) {
+      let nome = document.getElementById('nome-comentario').value;
+      let email = document.getElementById('email-comentario').value;
+      let comentario = document.getElementById('comentario').value;
+  
+      if (nome.length < 4) {
+        alert('O Nome precisa ter mais de 3 caracteres.');
+        e.preventDefault();
+        return;
+      }
+  
+      if (!email.includes('@') || !email.includes('.com')) {
+        alert('O E-Mail precisa ter "@" e ".com".');
+        e.preventDefault();
+        return;
+      }
+  
+      if (comentario.length < 10) {
+        alert('O Comentário precisa ter mais de 10 caracteres.');
+        e.preventDefault();
+        return;
+      }
+  
+      alert('Comentário enviado com sucesso!');
+    });
+  
+    for (let i = 0; i < commentInputs.length; i++) {
+      let input = commentInputs[i];
+      let tipo = input.getAttribute('type');
+  
+      if (tipo === 'text' || tipo === 'email') {
+        input.addEventListener('blur', function() {
+          let valor = this.value;
+  
+          if (this.id === 'nome-comentario') {
+            if (valor.length < 4) {
+              alert('O Nome precisa ter mais de 3 caracteres.');
+              this.classList.add('invalido');
+              return;
+            }
+          } else if (this.id === 'email-comentario') {
+            if (!valor.includes('@') || !valor.includes('.com')) {
+              alert('O E-Mail precisa ter "@" e ".com".');
+              this.classList.add('invalido');
+              return;
+            }
+          }
+  
+          this.classList.remove('invalido');
+        });
+      }
+    }
+  
+    commentTextarea.addEventListener('blur', function() {
+      let valor = this.value;
+  
+      if (valor.length < 10) {
+        alert('O Comentário precisa ter mais de 10 caracteres.');
+        this.classList.add('invalido');
+        return;
+      }
+  
+      this.classList.remove('invalido');
+    });
+

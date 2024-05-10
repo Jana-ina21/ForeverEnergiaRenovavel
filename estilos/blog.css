@@ -210,6 +210,12 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Para a validação do formulário de comentários */
+.invalido {
+    border-width: 3px;
+    background-color: #F44E3F;
+}
+
 /* Adicionando Regras de mídia para telas menores que 768px */
 @media screen and (max-width: 768px) {
     nav ul {
